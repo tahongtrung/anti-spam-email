@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+	  my-email::after {
+	    content: attr(data-domain);
+	  }
+	  my-email::before {
+	    content: attr(data-user);
+	  }
+	</style>
+</head>
+<body>
+
+
+<!-- Set data-user and data-domain as your 
+       email username and domain respectively --> 
+
+<my-email data-user="john" data-domain="gmail.com">@</my-email>
+</body>
+</html>
